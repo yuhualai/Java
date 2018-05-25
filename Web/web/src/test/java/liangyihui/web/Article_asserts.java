@@ -1,0 +1,103 @@
+package liangyihui.web;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+import org.testng.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class Article_asserts {
+	WebDriver driver;
+
+	@BeforeClass
+	public void beforeClass() {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "/Users/yuhualai/Desktop/chromedriver");
+		driver = new ChromeDriver();
+		String testUrl = "http://www.liangyihui.net";
+
+		driver.get(testUrl);
+		Actions actionOpenLinkInNewTab = new Actions(driver);
+		actionOpenLinkInNewTab.keyDown(Keys.COMMAND).sendKeys("t").keyUp(Keys.COMMAND).perform();
+		driver.findElement(By.cssSelector("body")).sendKeys(Keys.COMMAND + "t");
+		driver.manage().window().maximize();
+		System.out.println(driver.getTitle());
+
+	}
+
+	@Test
+	public void article() throws InterruptedException {
+		WebElement list = getAlllist().get(1);
+		AssertJUnit.assertTrue(list.isDisplayed());
+		String value = list.getText();
+		System.out.println("title is ：" + value);
+		list.click();
+		Thread.sleep(1000);
+
+		java.util.List<WebElement> links = driver.findElements(
+				By.cssSelector(".block_unit_wrapper.block_unit_news>.block_unit>.block_unit_right>.block_unit_title"));//.block_unit_wrapper.block_unit_news>.block_unit>.block_unit_right>.block_unit_title
+		WebElement list1 = links.get(0);
+		AssertJUnit.assertTrue(list1.isDisplayed());
+		String value1 = list1.getText();
+		String currentUrl = driver.getCurrentUrl();
+		System.out.println(currentUrl);
+		System.out.println("title is ：" + value1);
+		list1.click();
+		Thread.sleep(5000);
+		driver.navigate().back();
+
+		String currentWindow = driver.getWindowHandle();// 获取当前窗口句柄
+		Set<String> handles = driver.getWindowHandles();// 获取所有窗口句柄
+		Iterator<String> it = handles.iterator();
+		while (it.hasNext()) {
+			if (currentWindow == it.next()) {
+				continue;
+			}
+			driver = driver.switchTo().window(it.next());// 切换到新窗口
+
+			// 判断文章标题是否一致
+			WebElement userName = driver.findElement(By.xpath("html/body/div[2]/div[2]/h1"));
+			AssertJUnit.assertTrue(userName.isDisplayed());
+			String value2 = userName.getText();
+			System.out.println("title is ：" + value2);
+//			AssertJUnit.assertEquals(value1, value2, "这两个值不一样");
+
+			// 判断文章类型，并不能为空
+			WebElement channel = driver.findElement(By.xpath("html/body/div[2]/div[2]/div[2]/div[2]/span[1]"));
+			AssertJUnit.assertTrue(channel.isDisplayed());
+			String value3 = channel.getText();
+			System.out.println("这是一篇 ：" + value3);
+			Assert.assertNotNull(value3);
+			Thread.sleep(5000);
+			driver.findElement(By.xpath("html/body/div[1]/div/div[2]/div[7]/span")).click();
+			Thread.sleep(5000);
+
+		}
+		driver.switchTo().window(currentWindow);// 回到原来页面
+
+	}
+
+	@AfterClass
+	public void afterClass() {
+		driver.quit();
+	}
+
+	public List<WebElement> getAlllist() {
+		List<WebElement> lis = driver.findElements(By.cssSelector(".header_nav_section>a"));
+		return lis;
+	}
+
+}

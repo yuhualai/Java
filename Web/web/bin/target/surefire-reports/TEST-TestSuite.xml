@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="3" failures="0" name="TestSuite" time="36.715" errors="0" skipped="0">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="JOB_NAME" value="Web持续集成测试"/>
+    <property name="PWD" value="/Users/yuhualai/Downloads/apache-tomcat-9.0.0.M22/bin"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="JENKINS_HOME" value="/Users/yuhualai/.jenkins"/>
+    <property name="PATH" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/bin:/Library/Frameworks/Python.framework/Versions/3.5/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/ant/bin:/Users/yuhualai/Desktop/android-sdk-macosx/platform-tools:/Users/Shared/apache-maven-3.5.0/bin:/Users/yuhualai/Desktop/chromedriver:/Users/yuhualai/Desktop/android-sdk-macosx"/>
+    <property name="HUDSON_SERVER_COOKIE" value="1697ba621a10564f"/>
+    <property name="POM_ARTIFACTID" value="web"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="TERM_PROGRAM" value="Apple_Terminal"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/classes"/>
+    <property name="EXECUTOR_NUMBER" value="1"/>
+    <property name="TERM_SESSION_ID" value="944D2E97-E076-4459-8B56-D502248EF660"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="POM_DISPLAYNAME" value="web"/>
+    <property name="JAVA_MAIN_CLASS_808" value="org.apache.catalina.startup.Bootstrap"/>
+    <property name="NODE_LABELS" value="master"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="ANT_HOME" value="/usr/local/ant"/>
+    <property name="user.name" value="yuhualai"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="SECURITYSESSIONID" value="186a8"/>
+    <property name="user.language" value="zh"/>
+    <property name="JOB_BASE_NAME" value="Web持续集成测试"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://unconfigured-jenkins-location/job/Web%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E6%B5%8B%E8%AF%95/21/display/redirect?page=changes"/>
+    <property name="BUILD_DISPLAY_NAME" value="#21"/>
+    <property name="TMPDIR" value="/var/folders/4y/bpbr9l_d2pz0x6v9wh_tcgd40000gn/T/"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="XPC_FLAGS" value="0x0"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="NODE_NAME" value="master"/>
+    <property name="TERM" value="xterm-256color"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="BUILD_ID" value="21"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="SHELL" value="/bin/bash"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="maven.conf" value="/Users/Shared/apache-maven-3.5.0/conf"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="user.country" value="CN"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="os.version" value="10.12.5"/>
+    <property name="RUN_DISPLAY_URL" value="http://unconfigured-jenkins-location/job/Web%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E6%B5%8B%E8%AF%95/21/display/redirect"/>
+    <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
+    <property name="sun.font.fontmanager" value="sun.font.CFontManager"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="JOB_DISPLAY_URL" value="http://unconfigured-jenkins-location/job/Web%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E6%B5%8B%E8%AF%95/display/redirect"/>
+    <property name="SHLVL" value="2"/>
+    <property name="_" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/bin/java"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="JAVA_HOME" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="LOGNAME" value="yuhualai"/>
+    <property name="POM_PACKAGING" value="jar"/>
+    <property name="HOME" value="/Users/yuhualai"/>
+    <property name="POM_GROUPID" value="liangyihui"/>
+    <property name="user.home" value="/Users/yuhualai"/>
+    <property name="BUILD_TAG" value="jenkins-Web持续集成测试-21"/>
+    <property name="JENKINS_SERVER_COOKIE" value="1697ba621a10564f"/>
+    <property name="XPC_SERVICE_NAME" value="0"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="CLASSPATH" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="java.library.path" value="/Users/yuhualai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="Apple_PubSub_Socket_Render" value="/private/tmp/com.apple.launchd.FufVhA5HqQ/Render"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="maven.home" value="/Users/Shared/apache-maven-3.5.0"/>
+    <property name="java.class.path" value="/Users/yuhualai/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-agent-1.11.jar:/Users/Shared/apache-maven-3.5.0/boot/plexus-classworlds-2.5.2.jar:/Users/Shared/apache-maven-3.5.0/conf/logging"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main /Users/Shared/apache-maven-3.5.0 /Users/yuhualai/Downloads/apache-tomcat-9.0.0.M22/webapps/jenkins/WEB-INF/lib/remoting-3.10.jar /Users/yuhualai/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.11.jar /Users/yuhualai/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.11.jar 57416"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PATH+JDK" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/bin"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="M2_HOME" value="/Users/Shared/apache-maven-3.5.0"/>
+    <property name="java.io.tmpdir" value="/var/folders/4y/bpbr9l_d2pz0x6v9wh_tcgd40000gn/T/"/>
+    <property name="HUDSON_HOME" value="/Users/yuhualai/.jenkins"/>
+    <property name="PATH+MAVEN" value="/Users/Shared/apache-maven-3.5.0/bin"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="SSH_AUTH_SOCK" value="/private/tmp/com.apple.launchd.Ry1mfE9KGh/Listeners"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.ext.dirs" value="/Users/yuhualai/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="__CF_USER_TEXT_ENCODING" value="0x1F5:0x19:0x34"/>
+    <property name="user.dir" value="/Users/yuhualai/Desktop/Web/web"/>
+    <property name="line.separator" value="
+"/>
+    <property name="MAVEN_HOME" value="/Users/Shared/apache-maven-3.5.0"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="BUILD_NUMBER" value="21"/>
+    <property name="ANDROID_HOME" value="/Users/yuhualai/Desktop/android-sdk-macosx"/>
+    <property name="TERM_PROGRAM_VERSION" value="388.1"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="LANG" value="zh_CN.UTF-8"/>
+    <property name="maven3.interceptor" value="/Users/yuhualai/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.11.jar"/>
+    <property name="WORKSPACE" value="/Users/yuhualai/.jenkins/workspace/Web持续集成测试"/>
+    <property name="maven3.interceptor.common" value="/Users/yuhualai/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.11.jar"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="USER" value="yuhualai"/>
+  </properties>
+  <testcase classname="liangyihui.web.Login" name="login" time="11.349"/>
+  <testcase classname="liangyihui.web.Article_asserts" name="article" time="17.978"/>
+  <testcase classname="liangyihui.web.Search" name="search" time="7.388"/>
+</testsuite>

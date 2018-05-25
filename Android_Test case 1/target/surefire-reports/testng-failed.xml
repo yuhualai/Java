@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="20" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [suitename]" parallel="methods">
+  <test name="testename(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.app.Login">
+        <methods>
+          <include name="afterClass"/>
+          <include name="login"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- liangyihui.app.Login -->
+    </classes>
+  </test> <!-- testename(failed) -->
+  <test name="testename1(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.app.Articletype">
+        <methods>
+          <include name="afterClass"/>
+          <include name="f"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- liangyihui.app.Articletype -->
+    </classes>
+  </test> <!-- testename1(failed) -->
+  <test name="testename2(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.app.Found_recruitment">
+        <methods>
+          <include name="f1"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- liangyihui.app.Found_recruitment -->
+    </classes>
+  </test> <!-- testename2(failed) -->
+  <test name="testename3(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.app.Found_consultation">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="f1"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- liangyihui.app.Found_consultation -->
+    </classes>
+  </test> <!-- testename3(failed) -->
+  <test name="testename4(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.app.Found_Academic">
+        <methods>
+          <include name="afterClass"/>
+          <include name="f1"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- liangyihui.app.Found_Academic -->
+    </classes>
+  </test> <!-- testename4(failed) -->
+  <test name="testename5(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.app.Share">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="share"/>
+        </methods>
+      </class> <!-- liangyihui.app.Share -->
+    </classes>
+  </test> <!-- testename5(failed) -->
+  <test name="testename6(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.app.Subscribe_Browse">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="browse"/>
+        </methods>
+      </class> <!-- liangyihui.app.Subscribe_Browse -->
+    </classes>
+  </test> <!-- testename6(failed) -->
+  <test name="testename7(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.app.Subscribe_Collection">
+        <methods>
+          <include name="afterClass"/>
+          <include name="collection"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- liangyihui.app.Subscribe_Collection -->
+    </classes>
+  </test> <!-- testename7(failed) -->
+  <test name="testename8(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.app.Subscribe_Hottest">
+        <methods>
+          <include name="hottest"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- liangyihui.app.Subscribe_Hottest -->
+    </classes>
+  </test> <!-- testename8(failed) -->
+  <test name="testename9(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.app.Subscribe_Management">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="f2"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- liangyihui.app.Subscribe_Management -->
+    </classes>
+  </test> <!-- testename9(failed) -->
+  <test name="testename10(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.app.Subscribe_Record">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="record"/>
+        </methods>
+      </class> <!-- liangyihui.app.Subscribe_Record -->
+    </classes>
+  </test> <!-- testename10(failed) -->
+  <test name="testename11(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.app.Search">
+        <methods>
+          <include name="search"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- liangyihui.app.Search -->
+    </classes>
+  </test> <!-- testename11(failed) -->
+  <test name="testename12(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.app.Patients">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- liangyihui.app.Patients -->
+    </classes>
+  </test> <!-- testename12(failed) -->
+  <test name="testename13(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.app.Question">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- liangyihui.app.Question -->
+    </classes>
+  </test> <!-- testename13(failed) -->
+  <test name="testename14(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.app.Question_add">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="add"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- liangyihui.app.Question_add -->
+    </classes>
+  </test> <!-- testename14(failed) -->
+  <test name="testename15(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.app.Question_select">
+        <methods>
+          <include name="afterClass"/>
+          <include name="add"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- liangyihui.app.Question_select -->
+    </classes>
+  </test> <!-- testename15(failed) -->
+</suite> <!-- Failed suite [suitename] -->

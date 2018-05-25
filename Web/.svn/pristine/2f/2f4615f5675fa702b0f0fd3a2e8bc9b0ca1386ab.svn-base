@@ -1,0 +1,93 @@
+package liangyihui.web;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Login {
+	WebDriver driver;
+  @BeforeClass
+  public void beforeClass() {
+		// TODO Auto-generated method stub
+	  System.setProperty("webdriver.chrome.driver", "/Users/yuhualai/Desktop/chromedriver");
+		driver=new ChromeDriver();
+		String testUrl="http://www.liangyihui.net";
+		
+		driver.get(testUrl);
+		System.out.println(driver.getTitle());
+
+  }
+  @Test
+  public void login() throws InterruptedException {
+	 String loginElement="login";
+	 String uesrnanme="18900000009";
+	 String mobileElement="login1_mobile";
+	 String uesrpass="123456"; 
+	 String passwordElement="password"; 
+	 
+	 WebElement inputBox=driver.findElement(By.id(loginElement));
+	 Assert.assertTrue(inputBox.isDisplayed());
+	 inputBox.click();
+	 Thread.sleep(1000);
+	 
+	 //登录页面输入手机号
+	 WebElement login1_mobile=driver.findElement(By.id(mobileElement));
+	 Assert.assertTrue(login1_mobile.isDisplayed());
+	 login1_mobile.sendKeys(uesrnanme); 
+	 String value = login1_mobile.getAttribute("value");
+	 System.out.println("输入手机号："+value);
+	 Thread.sleep(1000);
+	  
+	  //登录页面输入密码
+	  WebElement password=driver.findElement(By.name(passwordElement));
+	  Assert.assertTrue(password.isDisplayed());
+	  password.sendKeys(uesrpass);
+	  String value1 = password.getAttribute("value");
+	  System.out.println("输入密码："+value1);	 
+	  Thread.sleep(1000);
+
+	 //点击登录，获取文本值
+	  WebElement login= driver.findElement(By.xpath("html/body/div[10]/div[3]/form[1]/div[4]/button"));
+	  Assert.assertTrue(login.isDisplayed());
+	  login.click();
+	  String value2 = login.getText();
+	  System.out.println(value2);
+	  Thread.sleep(1000);
+	  
+	  //判断结果是否登录成功
+	  System.out.println(waitEle(driver));
+	  Thread.sleep(5000);
+	  
+  }
+
+  @AfterClass
+  public void afterClass() {
+	  driver.quit();
+  }
+  
+  public String waitEle(WebDriver driver){
+	  WebElement element=driver.findElement(By.cssSelector(".header_nickname>.header_nickname_text.dotdotdot"));
+	  String elem=element.getText();
+	  if(elem.equals("肿瘤_Test")){
+	  return "肿瘤_Test";
+	  }
+	  return "失败";
+
+	  }
+  public static void MouseHoverByJavaScript(WebElement targetElement,WebDriver driver)
+  {
+
+      String mouseHoverjs = "var evObj = document.createEvent('MouseEvents');" +
+                          "evObj.initMouseEvent(\"mouseover\",true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);" +
+                          "arguments[0].dispatchEvent(evObj);";
+      JavascriptExecutor js = (JavascriptExecutor)driver;
+      js.executeScript(mouseHoverjs, targetElement);
+    }
+
+}

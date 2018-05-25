@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="14" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [suitename]" parallel="methods">
+  <parameter name="pass" value="123456"/>
+  <parameter name="username" value="18900000009"/>
+  <test name="testename1(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.net.Login">
+        <methods>
+          <include name="afterClass"/>
+          <include name="login"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- liangyihui.net.Login -->
+    </classes>
+  </test> <!-- testename1(failed) -->
+  <test name="testename2(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.net.Knowledge">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="knowledge"/>
+        </methods>
+      </class> <!-- liangyihui.net.Knowledge -->
+    </classes>
+  </test> <!-- testename2(failed) -->
+  <test name="testename3(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.net.Comments">
+        <methods>
+          <include name="comments"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- liangyihui.net.Comments -->
+    </classes>
+  </test> <!-- testename3(failed) -->
+  <test name="testename4(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.net.Mine_certification">
+        <methods>
+          <include name="login"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- liangyihui.net.Mine_certification -->
+    </classes>
+  </test> <!-- testename4(failed) -->
+  <test name="testename5(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.net.Public_class">
+        <methods>
+          <include name="publiclass"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- liangyihui.net.Public_class -->
+    </classes>
+  </test> <!-- testename5(failed) -->
+  <test name="testename6(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.net.Project">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="project"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- liangyihui.net.Project -->
+    </classes>
+  </test> <!-- testename6(failed) -->
+  <test name="testename7(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.net.Column">
+        <methods>
+          <include name="afterClass"/>
+          <include name="column"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- liangyihui.net.Column -->
+    </classes>
+  </test> <!-- testename7(failed) -->
+  <test name="testename8(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.net.Search">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="search"/>
+        </methods>
+      </class> <!-- liangyihui.net.Search -->
+    </classes>
+  </test> <!-- testename8(failed) -->
+  <test name="testename9(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.net.Mine_collect">
+        <methods>
+          <include name="collect"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- liangyihui.net.Mine_collect -->
+    </classes>
+  </test> <!-- testename9(failed) -->
+  <test name="testename10(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.net.Cases">
+        <methods>
+          <include name="afterClass"/>
+          <include name="cases"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- liangyihui.net.Cases -->
+    </classes>
+  </test> <!-- testename10(failed) -->
+  <test name="testename11(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.net.Question_add">
+        <methods>
+          <include name="afterClass"/>
+          <include name="question"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- liangyihui.net.Question_add -->
+    </classes>
+  </test> <!-- testename11(failed) -->
+  <test name="testename12(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.net.Question_select">
+        <methods>
+          <include name="afterClass"/>
+          <include name="question"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- liangyihui.net.Question_select -->
+    </classes>
+  </test> <!-- testename12(failed) -->
+  <test name="testename13(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.net.Menu_Subscribe">
+        <methods>
+          <include name="afterClass"/>
+          <include name="subscribe"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- liangyihui.net.Menu_Subscribe -->
+    </classes>
+  </test> <!-- testename13(failed) -->
+  <test name="testename14(failed)" parallel="methods">
+    <classes>
+      <class name="liangyihui.net.Menu_hottest">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="hottest"/>
+        </methods>
+      </class> <!-- liangyihui.net.Menu_hottest -->
+    </classes>
+  </test> <!-- testename14(failed) -->
+</suite> <!-- Failed suite [suitename] -->

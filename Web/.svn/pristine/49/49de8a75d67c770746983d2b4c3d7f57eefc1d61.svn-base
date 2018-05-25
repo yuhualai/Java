@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="68982" started-at="2017-07-24T06:19:04Z" finished-at="2017-07-24T06:20:13Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="68982" started-at="2017-07-24T06:19:04Z" finished-at="2017-07-24T06:20:13Z">
+      <class name="liangyihui.web.Web_test2">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:liangyihui.web.Web_test2@2c9f9fb0]" name="beforeClass" is-config="true" duration-ms="43337" started-at="2017-07-24T14:19:04Z" finished-at="2017-07-24T14:19:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="article()[pri:0, instance:liangyihui.web.Web_test2@2c9f9fb0]" name="article" duration-ms="25396" started-at="2017-07-24T14:19:47Z" finished-at="2017-07-24T14:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- article -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:liangyihui.web.Web_test2@2c9f9fb0]" name="afterClass" is-config="true" duration-ms="211" started-at="2017-07-24T14:20:13Z" finished-at="2017-07-24T14:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- liangyihui.web.Web_test2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

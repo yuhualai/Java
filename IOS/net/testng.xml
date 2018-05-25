@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suitename" parallel="true" thread-count="14">
+	<parameter name="username" value="18900000009" />
+	<parameter name="pass" value="123456" />
+	<test name="testename1">
+		<classes>
+			<class name="liangyihui.net.Login"> <!-- name参数为必须 "登录" -->
+				<methods>
+					<include name="login"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="testename2">
+		<classes>
+			<class name="liangyihui.net.Knowledge">  <!--" 知识" -->
+				<methods>
+					<include name="knowledge"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="testename3">
+		<classes>
+			<class name="liangyihui.net.Comments"> <!-- "评论" -->
+				<methods>
+					<include name="comments"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="testename4">
+		<classes>
+			<class name="liangyihui.net.Mine_certification"> <!-- "认证" -->
+				<methods>
+					<include name="login"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="testename5">
+		<classes>
+			<class name="liangyihui.net.Public_class"> <!-- "公开课" -->
+				<methods>
+					<include name="publiclass"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="testename6">
+		<classes>
+			<class name="liangyihui.net.Project"> <!-- "专题" -->
+				<methods>
+					<include name="project"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="testename7">
+		<classes>
+			<class name="liangyihui.net.Column"> <!-- "专栏" -->
+				<methods>
+					<include name="column"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="testename8">
+		<classes>
+			<class name="liangyihui.net.Search"> <!-- "搜索" -->
+				<methods>
+					<include name="search"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="testename9">
+		<classes>
+			<class name="liangyihui.net.Mine_collect"> <!-- "收藏" -->
+				<methods>
+					<include name="collect"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="testename10">
+		<classes>
+			<class name="liangyihui.net.Cases"> <!-- "病例" -->
+				<methods>
+					<include name="cases"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="testename11">
+		<classes>
+			<class name="liangyihui.net.Question_add"> <!-- "增加问题" -->
+				<methods>
+					<include name="question"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="testename12">
+		<classes>
+			<class name="liangyihui.net.Question_select"> <!-- "问题精选" -->
+				<methods>
+					<include name="question"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="testename13">
+		<classes>
+			<class name="liangyihui.net.Menu_Subscribe"> <!-- "订阅管理" -->
+				<methods>
+					<include name="subscribe"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="testename14">
+		<classes>
+			<class name="liangyihui.net.Menu_hottest"> <!-- "本周最热" -->
+				<methods>
+					<include name="hottest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

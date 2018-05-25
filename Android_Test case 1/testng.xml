@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"> 
+ <suite name="suitename" parallel="true" thread-count="20" >
+  <test name="testename">
+     <classes> 
+        <class name="liangyihui.app.Login"> <!-- name参数为必须  -->
+            <methods> 
+               <include name="login"></include> 
+            </methods> 
+        </class> 
+     </classes>      
+   </test> 
+  <test name="testename1">
+     <classes> 
+        <class name="liangyihui.app.Articletype"> <!-- name参数为必须  -->
+            <methods> 
+               <include name="f"></include> 
+            </methods> 
+        </class> 
+     </classes>      
+   </test> 
+   <test name="testename2">
+     <classes> 
+        <class name="liangyihui.app.Found_recruitment"> <!-- name参数为必须  -->
+            <methods> 
+               <include name="f1"></include> 
+            </methods> 
+        </class> 
+     </classes>      
+   </test> 
+   <test name="testename3">
+     <classes> 
+        <class name="liangyihui.app.Found_consultation"> <!-- name参数为必须  -->
+            <methods> 
+               <include name="f1"></include> 
+            </methods> 
+        </class> 
+     </classes>      
+   </test> 
+   <test name="testename4">
+     <classes> 
+        <class name="liangyihui.app.Found_Academic"> <!-- name参数为必须  -->
+            <methods> 
+               <include name="f1"></include> 
+            </methods> 
+        </class> 
+     </classes>      
+   </test> 
+    <test name="testename5">
+     <classes> 
+        <class name="liangyihui.app.Share"> <!-- name参数为必须  -->
+            <methods> 
+               <include name="share"></include> 
+            </methods> 
+        </class> 
+     </classes>      
+   </test> 
+    <test name="testename6">
+     <classes> 
+        <class name="liangyihui.app.Subscribe_Browse"> <!-- name参数为必须  -->
+            <methods> 
+               <include name="browse"></include> 
+            </methods> 
+        </class> 
+     </classes>      
+   </test> 
+    <test name="testename7">
+     <classes> 
+        <class name="liangyihui.app.Subscribe_Collection"> <!-- name参数为必须  -->
+            <methods> 
+               <include name="collection"></include> 
+            </methods> 
+        </class> 
+     </classes>      
+   </test> 
+    <test name="testename8">
+     <classes> 
+        <class name="liangyihui.app.Subscribe_Hottest"> <!-- name参数为必须  -->
+            <methods> 
+               <include name="hottest"></include> 
+            </methods> 
+        </class> 
+     </classes>      
+   </test> 
+    <test name="testename9">
+     <classes> 
+        <class name="liangyihui.app.Subscribe_Management"> <!-- name参数为必须  -->
+            <methods> 
+               <include name="management"></include> 
+            </methods> 
+        </class> 
+     </classes>      
+   </test> 
+    <test name="testename10">
+     <classes> 
+        <class name="liangyihui.app.Subscribe_Record"> <!-- name参数为必须  -->
+            <methods> 
+               <include name="record"></include> 
+            </methods> 
+        </class> 
+     </classes>      
+   </test> 
+   <test name="testename11">
+     <classes> 
+        <class name="liangyihui.app.Search"> <!-- name参数为必须  -->
+            <methods> 
+               <include name="search"></include> 
+            </methods> 
+        </class> 
+     </classes>      
+   </test> 
+   <test name="testename12">
+     <classes> 
+        <class name="liangyihui.app.Patients"> <!-- name参数为必须  -->
+            <methods> 
+               <include name="login"></include> 
+            </methods> 
+        </class> 
+     </classes>      
+   </test> 
+  <test name="testename13">
+     <classes> 
+        <class name="liangyihui.app.Question"> <!-- name参数为必须  -->
+            <methods> 
+               <include name="login"></include> 
+            </methods> 
+        </class> 
+     </classes>      
+   </test> 
+   <test name="testename14">
+     <classes> 
+        <class name="liangyihui.app.Question_add"> <!-- name参数为必须  -->
+            <methods> 
+               <include name="add"></include> 
+            </methods> 
+        </class> 
+     </classes>      
+   </test> 
+   <test name="testename15">
+     <classes> 
+        <class name="liangyihui.app.Question_select"> <!-- name参数为必须  -->
+            <methods> 
+               <include name="add"></include> 
+            </methods> 
+        </class> 
+     </classes>      
+   </test> 
+   
+</suite>

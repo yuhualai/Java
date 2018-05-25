@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="true" thread-count="3">
+    <test name="Test1">  
+        <classes>
+            <class name="liangyihui.web.Login">
+                <methods>
+                    <include name="login" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+     <test name="Test2"> 
+        <classes>
+            <class name="liangyihui.web.Article_asserts">
+                <methods>
+                    <include name="article" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test3">
+    
+        <classes>
+            <class name="liangyihui.web.Search">
+                <methods>
+                    <include name="search" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

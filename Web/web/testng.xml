@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="com.liangyihui.intal.Search"/>
+      <class name="liangyihui.web.Login"/>
+      <class name="liangyihui.web.CHH"/>
+      <class name="com.liangyihui.intal.Testintal"/>
+      <class name="com.liangyihui.intal.Article_asserts"/>
+      <class name="com.liangyihui.intal.TestLogin"/>
+      <class name="liangyihui.web.Testign"/>
+      <class name="liangyihui.web.Article_asserts"/>
+      <class name="liangyihui.web.Search"/>
+      <class name="liangyihui.web.list"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
